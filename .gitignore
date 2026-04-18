@@ -1,1 +1,19 @@
+# CSV files
 *.csv
+
+# SSIS build outputs
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# SSIS deployment files
+*.ispac
+
+# Logs
+*.log
