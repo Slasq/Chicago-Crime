@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="49"
-  DTS:VersionGUID="{E13284CD-F601-4C3E-AF09-038C87ED2562}">
+  DTS:VersionBuild="50"
+  DTS:VersionGUID="{D36130BC-6B23-4614-A90D-20849FD610EB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -8238,7 +8238,7 @@ where [refTable].[block] = ?</property>
     design-time-name="Package\ETL_DIM_DATE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="99,42"
           Id="Package\ETL_DIM_DATE\Sort"
@@ -8274,9 +8274,7 @@ where [refTable].[block] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8310,9 +8308,7 @@ where [refTable].[block] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8346,9 +8342,7 @@ where [refTable].[block] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8371,129 +8365,123 @@ where [refTable].[block] = ?</property>
     design-time-name="Package\ETL_DIM_LOCATION">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="177,42"
           Id="Package\ETL_DIM_LOCATION\OLE DB Destination"
-          TopLeft="284,344" />
+          TopLeft="433,259" />
         <NodeLayout
           Size="99,42"
           Id="Package\ETL_DIM_LOCATION\Sort"
-          TopLeft="195,152" />
+          TopLeft="329,123" />
         <NodeLayout
           Size="161,42"
           Id="Package\ETL_DIM_LOCATION\Data Conversion"
-          TopLeft="369,228" />
+          TopLeft="352,188" />
         <NodeLayout
           Size="156,42"
           Id="Package\ETL_DIM_LOCATION\Flat File Source"
-          TopLeft="190,53" />
+          TopLeft="237,58" />
         <EdgeLayout
           Id="Package\ETL_DIM_LOCATION.Paths[Data Conversion Output]"
-          TopLeft="449.5,270">
+          TopLeft="432.5,230">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-77,74"
+              EndConnector="89,29"
               Start="0,0"
-              End="-77,66.5">
+              End="89,21.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33" />
+                    End="0,10.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33"
-                    Point2="0,37"
-                    Point3="-4,37" />
+                    Point1="0,10.5"
+                    Point2="0,14.5"
+                    Point3="4,14.5" />
                   <mssgle:LineSegment
-                    End="-73,37" />
+                    End="85,14.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-73,37"
-                    Point2="-77,37"
-                    Point3="-77,41" />
+                    Point1="85,14.5"
+                    Point2="89,14.5"
+                    Point3="89,18.5" />
                   <mssgle:LineSegment
-                    End="-77,66.5" />
+                    End="89,21.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL_DIM_LOCATION.Paths[Sort Output]"
-          TopLeft="244.5,194">
+          TopLeft="378.5,165">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="205,34"
+              EndConnector="54,23"
               Start="0,0"
-              End="205,26.5">
+              End="54,15.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13" />
+                    End="0,7.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13"
-                    Point2="0,17"
-                    Point3="4,17" />
+                    Point1="0,7.5"
+                    Point2="0,11.5"
+                    Point3="4,11.5" />
                   <mssgle:LineSegment
-                    End="201,17" />
+                    End="50,11.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="201,17"
-                    Point2="205,17"
-                    Point3="205,21" />
+                    Point1="50,11.5"
+                    Point2="54,11.5"
+                    Point3="54,15.5" />
                   <mssgle:LineSegment
-                    End="205,26.5" />
+                    End="54,15.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL_DIM_LOCATION.Paths[Flat File Source Output]"
-          TopLeft="268,95">
+          TopLeft="315,100">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-23.5,57"
+              EndConnector="63.5,23"
               Start="0,0"
-              End="-23.5,49.5">
+              End="63.5,15.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.5" />
+                    End="0,7.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.5"
-                    Point2="0,28.5"
-                    Point3="-4,28.5" />
+                    Point1="0,7.5"
+                    Point2="0,11.5"
+                    Point3="4,11.5" />
                   <mssgle:LineSegment
-                    End="-19.5,28.5" />
+                    End="59.5,11.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-19.5,28.5"
-                    Point2="-23.5,28.5"
-                    Point3="-23.5,32.5" />
+                    Point1="59.5,11.5"
+                    Point2="63.5,11.5"
+                    Point3="63.5,15.5" />
                   <mssgle:LineSegment
-                    End="-23.5,49.5" />
+                    End="63.5,15.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8520,37 +8508,37 @@ where [refTable].[block] = ?</property>
         <NodeLayout
           Size="156,42"
           Id="Package\ETL_FACT_CRIMES\Flat File Source"
-          TopLeft="511,18" />
+          TopLeft="222,29" />
         <NodeLayout
           Size="158,42"
           Id="Package\ETL_FACT_CRIMES\Derived Column"
-          TopLeft="551,87" />
+          TopLeft="306,105" />
         <EdgeLayout
           Id="Package\ETL_FACT_CRIMES.Paths[Flat File Source Output]"
-          TopLeft="589,60">
+          TopLeft="300,71">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41,27"
+              EndConnector="85,34"
               Start="0,0"
-              End="41,19.5">
+              End="85,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.5" />
+                    End="0,13" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9.5"
-                    Point2="0,13.5"
-                    Point3="4,13.5" />
+                    Point1="0,13"
+                    Point2="0,17"
+                    Point3="4,17" />
                   <mssgle:LineSegment
-                    End="37,13.5" />
+                    End="81,17" />
                   <mssgle:CubicBezierSegment
-                    Point1="37,13.5"
-                    Point2="41,13.5"
-                    Point3="41,17.5" />
+                    Point1="81,17"
+                    Point2="85,17"
+                    Point3="85,21" />
                   <mssgle:LineSegment
-                    End="41,19.5" />
+                    End="85,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8562,33 +8550,33 @@ where [refTable].[block] = ?</property>
         <NodeLayout
           Size="115,42"
           Id="Package\ETL_FACT_CRIMES\Lookup"
-          TopLeft="547,160" />
+          TopLeft="419,189" />
         <EdgeLayout
           Id="Package\ETL_FACT_CRIMES.Paths[Derived Column Output]"
-          TopLeft="630,129">
+          TopLeft="385,147">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-25.5,31"
+              EndConnector="91.5,42"
               Start="0,0"
-              End="-25.5,23.5">
+              End="91.5,34.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.5" />
+                    End="0,17" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.5"
-                    Point2="0,15.5"
-                    Point3="-4,15.5" />
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
                   <mssgle:LineSegment
-                    End="-21.5,15.5" />
+                    End="87.5,21" />
                   <mssgle:CubicBezierSegment
-                    Point1="-21.5,15.5"
-                    Point2="-25.5,15.5"
-                    Point3="-25.5,19.5" />
+                    Point1="87.5,21"
+                    Point2="91.5,21"
+                    Point3="91.5,25" />
                   <mssgle:LineSegment
-                    End="-25.5,23.5" />
+                    End="91.5,34.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8600,80 +8588,80 @@ where [refTable].[block] = ?</property>
         <NodeLayout
           Size="124,42"
           Id="Package\ETL_FACT_CRIMES\Lookup 1"
-          TopLeft="593,246" />
+          TopLeft="541,290" />
         <EdgeLayout
           Id="Package\ETL_FACT_CRIMES.Paths[Lookup Match Output]"
-          TopLeft="604.5,202">
+          TopLeft="476.5,231">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="50.5,44"
+              EndConnector="126.5,59"
               Start="0,0"
-              End="50.5,36.5">
+              End="126.5,51.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18" />
+                    End="0,25.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18"
-                    Point2="0,22"
-                    Point3="4,22" />
+                    Point1="0,25.5"
+                    Point2="0,29.5"
+                    Point3="4,29.5" />
                   <mssgle:LineSegment
-                    End="46.5,22" />
+                    End="122.5,29.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="46.5,22"
-                    Point2="50.5,22"
-                    Point3="50.5,26" />
+                    Point1="122.5,29.5"
+                    Point2="126.5,29.5"
+                    Point3="126.5,33.5" />
                   <mssgle:LineSegment
-                    End="50.5,36.5" />
+                    End="126.5,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-22.94138671875,27,96.3827734375,11.609375"
+              BoundingBox="15.05861328125,34.5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
           Size="177,42"
           Id="Package\ETL_FACT_CRIMES\OLE DB Destination"
-          TopLeft="375,327" />
+          TopLeft="657,386" />
         <EdgeLayout
           Id="Package\ETL_FACT_CRIMES.Paths[Lookup Match Output1]"
-          TopLeft="655,288">
+          TopLeft="603,332">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-191.5,39"
+              EndConnector="142.5,54"
               Start="0,0"
-              End="-191.5,31.5">
+              End="142.5,46.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.5" />
+                    End="0,23" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.5"
-                    Point2="0,19.5"
-                    Point3="-4,19.5" />
+                    Point1="0,23"
+                    Point2="0,27"
+                    Point3="4,27" />
                   <mssgle:LineSegment
-                    End="-187.5,19.5" />
+                    End="138.5,27" />
                   <mssgle:CubicBezierSegment
-                    Point1="-187.5,19.5"
-                    Point2="-191.5,19.5"
-                    Point3="-191.5,23.5" />
+                    Point1="138.5,27"
+                    Point2="142.5,27"
+                    Point3="142.5,31" />
                   <mssgle:LineSegment
-                    End="-191.5,31.5" />
+                    End="142.5,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-143.94138671875,24.5,96.3827734375,11.609375"
+              BoundingBox="23.05861328125,32,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
