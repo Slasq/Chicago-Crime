@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{6F45F9EB-CF3F-47BA-B000-A4B6AB829BB2}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{A2F07DD9-A68C-42D6-B4D8-B0D186F818CD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -241,6 +241,224 @@
               DTS:TextQualified="True"
               DTS:ObjectName="Location"
               DTS:DTSID="{00905C73-3F10-417E-BF55-A0B32A7D95A9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dim date data flow task]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4C7CE5CA-0863-4AA4-907F-47FFA9C15E0E}"
+      DTS:ObjectName="dim date data flow task">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\Student\Desktop\chicago_crime_1mln.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{ACECD559-FC08-43A1-AC92-C117BCD0D9FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Case Number"
+              DTS:DTSID="{810FE1F8-14FA-4BE6-BAD0-CAA2FA869F57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{A19BF70B-D09C-47F6-9769-5537AF11181C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Block"
+              DTS:DTSID="{4F010E20-3989-4E5B-A82D-31E3A702696D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IUCR"
+              DTS:DTSID="{136673B4-B29A-4CCA-B0CA-3F9243E2A7A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Primary Type"
+              DTS:DTSID="{FEF4A45D-72BA-4D9F-AB53-13AC8A680370}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Description"
+              DTS:DTSID="{ADBACAE1-4E59-40EE-B208-6A3A93AEAA24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location Description"
+              DTS:DTSID="{3CFE2B81-73F5-4840-949C-D08D16C9C116}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Arrest"
+              DTS:DTSID="{D08FDD42-62E2-49CC-832A-489086723E2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Domestic"
+              DTS:DTSID="{CA501ABD-6EBC-4B09-A3A7-DEEC2CD229F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Beat"
+              DTS:DTSID="{65F66919-7EF0-4E97-949C-50CED38C221C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="District"
+              DTS:DTSID="{4E35815E-094A-41F8-BF91-89BF87086C95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ward"
+              DTS:DTSID="{9906BC81-FF26-43FE-A395-1D9D3F48C3C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Community Area"
+              DTS:DTSID="{819C91AC-9C50-4AB5-AED0-3834FBA5B0FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FBI Code"
+              DTS:DTSID="{5F6FE847-F595-4440-BA97-4F502191CEFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="X Coordinate"
+              DTS:DTSID="{489263EB-C34E-4886-B134-3BBC3F03BA18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y Coordinate"
+              DTS:DTSID="{BD782C4D-5BF0-4F5E-9EB8-8BD75DCB856F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{AD1E6778-CF8B-406E-B6F8-A2F7BEBBB94C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Updated On"
+              DTS:DTSID="{03284381-6A60-4107-8D5C-1E9BA8A8AA73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitude"
+              DTS:DTSID="{0BF906FC-D12C-4F95-BCF8-5C37E734C02A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitude"
+              DTS:DTSID="{7D00C304-1EE2-48FC-BA30-69E22B6C6556}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location"
+              DTS:DTSID="{37A33874-FE2E-4246-8C31-3B455D01CB00}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2114,6 +2332,1978 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\ETL_DIM_DATE"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{93128E85-0CA1-458C-A0D0-8E7855758405}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL_DIM_DATE"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL_DIM_DATE\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL_DIM_DATE\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Inputs[Derived Column Input].Columns[Date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\ETL_DIM_DATE\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[date_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[date_id]"
+                      name="date_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},7,4) * 1000000 + (DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},4,2) * 10000 + (DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},1,2) * 100 + (DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},12,2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)SUBSTRING(Date,7,4) * 1000000 + (DT_I4)SUBSTRING(Date,4,2) * 10000 + (DT_I4)SUBSTRING(Date,1,2) * 100 + (DT_I4)SUBSTRING(Date,12,2)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[year]"
+                      name="year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},7,4)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)SUBSTRING(Date,7,4)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[month]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[month]"
+                      name="month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},4,2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)SUBSTRING(Date,4,2)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[day]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[day]"
+                      name="day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},1,2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)SUBSTRING(Date,1,2)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[hour]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[hour]"
+                      name="hour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)[SUBSTRING](#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]},12,2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)SUBSTRING(Date,12,2)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\ETL_DIM_DATE\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL_DIM_DATE\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL_DIM_DATE\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dim date data flow task]"
+                  connectionManagerRefId="Package.ConnectionManagers[dim date data flow task]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[ID]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[ID]"
+                      name="ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Case Number]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Case Number]"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Case Number]"
+                      name="Case Number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Block]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Block]"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Block]"
+                      name="Block"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[IUCR]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IUCR]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[IUCR]"
+                      name="IUCR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Primary Type]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Primary Type]"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Primary Type]"
+                      name="Primary Type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Description]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Description]"
+                      name="Description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location Description]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location Description]"
+                      name="Location Description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Arrest]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Arrest]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Arrest]"
+                      name="Arrest"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Domestic]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Domestic]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Domestic]"
+                      name="Domestic"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Beat]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Beat]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Beat]"
+                      name="Beat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[District]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[District]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[District]"
+                      name="District"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Ward]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]"
+                      name="Ward"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]"
+                      name="Community Area"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[FBI Code]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FBI Code]"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[FBI Code]"
+                      name="FBI Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[X Coordinate]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[X Coordinate]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[X Coordinate]"
+                      name="X Coordinate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Y Coordinate]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Y Coordinate]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Y Coordinate]"
+                      name="Y Coordinate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Updated On]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Updated On]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Updated On]"
+                      name="Updated On"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]"
+                      name="Latitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]"
+                      name="Longitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location]"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location]"
+                      name="Location"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Case Number]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Case Number" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Block]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Block" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IUCR]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="IUCR" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Primary Type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Primary Type" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Location Description" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Arrest]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Arrest" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Domestic]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Domestic" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Beat]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Beat" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[District]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="District" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Ward]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Ward" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Community Area" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FBI Code]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="FBI Code" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[X Coordinate]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="X Coordinate" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Y Coordinate]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Y Coordinate" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Updated On]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Updated On" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Location" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL_DIM_DATE\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DIM_DATE]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL_DIM_DATE\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-IFD8LT5\WAD.ChicagoCrime_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IFD8LT5\WAD.ChicagoCrime_DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date_id]"
+                      cachedDataType="i4"
+                      cachedName="date_id"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_id]"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[date_id]" />
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[month]"
+                      cachedDataType="i4"
+                      cachedName="month"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month]"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[month]" />
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[day]"
+                      cachedDataType="i4"
+                      cachedName="day"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[day]"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[day]" />
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[hour]"
+                      cachedDataType="i4"
+                      cachedName="hour"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hour]"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[hour]" />
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_id]"
+                      dataType="i4"
+                      name="date_id" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[full_date]"
+                      dataType="dbTimeStamp"
+                      name="full_date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                      dataType="i4"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month]"
+                      dataType="i4"
+                      name="month" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month_name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="20"
+                      name="month_name" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[day]"
+                      dataType="i4"
+                      name="day" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hour]"
+                      dataType="i4"
+                      name="hour" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[day_of_week]"
+                      codePage="1250"
+                      dataType="str"
+                      length="15"
+                      name="day_of_week" />
+                    <externalMetadataColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[quarter]"
+                      dataType="i4"
+                      name="quarter" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL_DIM_DATE\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL_DIM_DATE\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[ID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Case Number]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Case Number"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Case Number]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Block]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Block"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Block]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[IUCR]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IUCR"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[IUCR]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Primary Type]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Primary Type"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Primary Type]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Description]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Description"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Description]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Location Description]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Location Description"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location Description]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Arrest]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Arrest"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Arrest]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Domestic]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Domestic"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Domestic]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Beat]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Beat"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Beat]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[District]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="District"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[District]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Ward]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Ward"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Community Area]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Community Area"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[FBI Code]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="FBI Code"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[FBI Code]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[X Coordinate]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="X Coordinate"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[X Coordinate]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Y Coordinate]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Y Coordinate"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Y Coordinate]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Year]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Updated On]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Updated On"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Updated On]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Latitude]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Latitude"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Longitude]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Longitude"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[Location]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Location"
+                      lineageId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[date_id]"
+                      cachedDataType="i4"
+                      cachedName="date_id"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[date_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[year]"
+                      cachedDataType="i4"
+                      cachedName="year"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[month]"
+                      cachedDataType="i4"
+                      cachedName="month"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[month]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[day]"
+                      cachedDataType="i4"
+                      cachedName="day"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[day]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input].Columns[hour]"
+                      cachedDataType="i4"
+                      cachedName="hour"
+                      lineageId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[hour]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[ID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[ID]"
+                      name="ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[ID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Case Number]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Case Number]"
+                      name="Case Number">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Case Number]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Date]"
+                      name="Date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Date]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Block]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Block]"
+                      name="Block">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Block]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[IUCR]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[IUCR]"
+                      name="IUCR">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[IUCR]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Primary Type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Primary Type]"
+                      name="Primary Type">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Primary Type]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Description]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Description]"
+                      name="Description">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Description]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Location Description]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Location Description]"
+                      name="Location Description">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location Description]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Arrest]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Arrest]"
+                      name="Arrest">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Arrest]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Domestic]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Domestic]"
+                      name="Domestic">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Domestic]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Beat]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Beat]"
+                      name="Beat">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Beat]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[District]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[District]"
+                      name="District">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[District]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Ward]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Ward]"
+                      name="Ward">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Community Area]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Community Area]"
+                      name="Community Area">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[FBI Code]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[FBI Code]"
+                      name="FBI Code">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[FBI Code]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[X Coordinate]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[X Coordinate]"
+                      name="X Coordinate">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[X Coordinate]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Y Coordinate]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Y Coordinate]"
+                      name="Y Coordinate">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Y Coordinate]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Year]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Year]"
+                      name="Year">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Updated On]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Updated On]"
+                      name="Updated On">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Updated On]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Latitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Latitude]"
+                      name="Latitude">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Longitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Longitude]"
+                      name="Longitude">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Location]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[Location]"
+                      name="Location">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output].Columns[Location]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[date_id]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[date_id]"
+                      name="date_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[date_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[year]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[year]"
+                      name="year">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[month]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[month]"
+                      name="month">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[month]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[day]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[day]"
+                      name="day">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[day]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[hour]"
+                      dataType="i4"
+                      lineageId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output].Columns[hour]"
+                      name="hour">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output].Columns[hour]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL_DIM_DATE.Paths[Derived Column Output]"
+              endId="Package\ETL_DIM_DATE\Sort.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\ETL_DIM_DATE\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\ETL_DIM_DATE.Paths[Flat File Source Output]"
+              endId="Package\ETL_DIM_DATE\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\ETL_DIM_DATE\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\ETL_DIM_DATE.Paths[Sort Output]"
+              endId="Package\ETL_DIM_DATE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Sort Output"
+              startId="Package\ETL_DIM_DATE\Sort.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\ETL_DIM_LOCATION"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -3977,6 +6167,40 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate DIM_DATE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3B8CF0BE-92BE-48AB-91A2-F49886C26554}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate DIM_DATE"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1C40F63D-F55E-4340-A3D7-7036DECDD68A}"
+          SQLTask:SqlStatementSource="DELETE FROM DIM_DATE;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update DIM_DATE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D25EED24-EEFF-4B62-843C-7524185EB79F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update DIM_DATE"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1C40F63D-F55E-4340-A3D7-7036DECDD68A}"
+          SQLTask:SqlStatementSource="UPDATE DIM_DATE SET&#xA;    full_date = TRY_CONVERT(DATETIME,&#xA;        CAST(year AS VARCHAR) + '-' + &#xA;        RIGHT('0' + CAST(month AS VARCHAR), 2) + '-' + &#xA;        RIGHT('0' + CAST(day AS VARCHAR), 2) + ' ' + &#xA;        RIGHT('0' + CAST(hour AS VARCHAR), 2) + ':00:00');&#xA;&#xA;UPDATE DIM_DATE SET&#xA;    month_name = CASE month&#xA;        WHEN 1  THEN 'Styczeń'&#xA;        WHEN 2  THEN 'Luty'&#xA;        WHEN 3  THEN 'Marzec'&#xA;        WHEN 4  THEN 'Kwiecień'&#xA;        WHEN 5  THEN 'Maj'&#xA;        WHEN 6  THEN 'Czerwiec'&#xA;        WHEN 7  THEN 'Lipiec'&#xA;        WHEN 8  THEN 'Sierpień'&#xA;        WHEN 9  THEN 'Wrzesień'&#xA;        WHEN 10 THEN 'Październik'&#xA;        WHEN 11 THEN 'Listopad'&#xA;        WHEN 12 THEN 'Grudzień'&#xA;    END,&#xA;    day_of_week = DATENAME(WEEKDAY, full_date),&#xA;    quarter = DATEPART(QUARTER, full_date);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -3987,6 +6211,30 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\ETL_DIM_LOCATION" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4F7532BB-2208-4C98-9707-934216ED073E}"
+      DTS:From="Package\Truncate DIM_DATE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\ETL_DIM_DATE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{D25EE682-850B-43A8-9A72-20AC07EABD58}"
+      DTS:From="Package\ETL_DIM_DATE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update DIM_DATE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{7222DF1B-111E-42EB-963B-36B14D85C843}"
+      DTS:From="Package\Update DIM_DATE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\ETL_DIM_CRIME_TYPE" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -3999,41 +6247,107 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="202,42"
           Id="Package\ETL_DIM_CRIME_TYPE"
-          TopLeft="387,120" />
+          TopLeft="308,395" />
         <NodeLayout
           Size="188,42"
           Id="Package\ETL_DIM_LOCATION"
-          TopLeft="344,259" />
+          TopLeft="313,511" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="488,162">
+          TopLeft="408,437">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-50,97"
+              EndConnector="0,74"
               Start="0,0"
-              End="-50,89.5">
+              End="0,66.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,44.5"
-                    Point2="0,48.5"
-                    Point3="-4,48.5" />
+                    End="0,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\ETL_DIM_DATE"
+          TopLeft="337,175" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Truncate DIM_DATE"
+          TopLeft="326,95" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="417,137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-46,48.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-46,48.5"
-                    Point2="-50,48.5"
-                    Point3="-50,52.5" />
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Update DIM_DATE"
+          TopLeft="329,272" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="416.5,217">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-50,89.5" />
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="412.25,314">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81"
+              Start="0,0"
+              End="0,73.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4128,89 +6442,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
-          Id="Package\ETL_DIM_LOCATION\Flat File Source"
-          TopLeft="190,53" />
+          Size="177,42"
+          Id="Package\ETL_DIM_LOCATION\OLE DB Destination"
+          TopLeft="284,344" />
         <NodeLayout
           Size="99,42"
           Id="Package\ETL_DIM_LOCATION\Sort"
           TopLeft="195,152" />
-        <EdgeLayout
-          Id="Package\ETL_DIM_LOCATION.Paths[Flat File Source Output]"
-          TopLeft="268,95">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-23.5,57"
-              Start="0,0"
-              End="-23.5,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.5"
-                    Point2="0,28.5"
-                    Point3="-4,28.5" />
-                  <mssgle:LineSegment
-                    End="-19.5,28.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-19.5,28.5"
-                    Point2="-23.5,28.5"
-                    Point3="-23.5,32.5" />
-                  <mssgle:LineSegment
-                    End="-23.5,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="161,42"
           Id="Package\ETL_DIM_LOCATION\Data Conversion"
           TopLeft="369,228" />
-        <EdgeLayout
-          Id="Package\ETL_DIM_LOCATION.Paths[Sort Output]"
-          TopLeft="244.5,194">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="205,34"
-              Start="0,0"
-              End="205,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13"
-                    Point2="0,17"
-                    Point3="4,17" />
-                  <mssgle:LineSegment
-                    End="201,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="201,17"
-                    Point2="205,17"
-                    Point3="205,21" />
-                  <mssgle:LineSegment
-                    End="205,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
-          Size="177,42"
-          Id="Package\ETL_DIM_LOCATION\OLE DB Destination"
-          TopLeft="284,344" />
+          Size="156,42"
+          Id="Package\ETL_DIM_LOCATION\Flat File Source"
+          TopLeft="190,53" />
         <EdgeLayout
           Id="Package\ETL_DIM_LOCATION.Paths[Data Conversion Output]"
           TopLeft="449.5,270">
@@ -4245,11 +6491,206 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL_DIM_LOCATION.Paths[Sort Output]"
+          TopLeft="244.5,194">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="205,34"
+              Start="0,0"
+              End="205,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13"
+                    Point2="0,17"
+                    Point3="4,17" />
+                  <mssgle:LineSegment
+                    End="201,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="201,17"
+                    Point2="205,17"
+                    Point3="205,21" />
+                  <mssgle:LineSegment
+                    End="205,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL_DIM_LOCATION.Paths[Flat File Source Output]"
+          TopLeft="268,95">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-23.5,57"
+              Start="0,0"
+              End="-23.5,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5"
+                    Point2="0,28.5"
+                    Point3="-4,28.5" />
+                  <mssgle:LineSegment
+                    End="-19.5,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19.5,28.5"
+                    Point2="-23.5,28.5"
+                    Point3="-23.5,32.5" />
+                  <mssgle:LineSegment
+                    End="-23.5,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\ETL_DIM_LOCATION\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\ETL_DIM_DATE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,42"
+          Id="Package\ETL_DIM_DATE\Flat File Source"
+          TopLeft="374,80" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\ETL_DIM_DATE\Derived Column"
+          TopLeft="379,173" />
+        <EdgeLayout
+          Id="Package\ETL_DIM_DATE.Paths[Flat File Source Output]"
+          TopLeft="455,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\ETL_DIM_DATE\OLE DB Destination"
+          TopLeft="391,348" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\ETL_DIM_DATE\Sort"
+          TopLeft="391,257" />
+        <EdgeLayout
+          Id="Package\ETL_DIM_DATE.Paths[Sort Output]"
+          TopLeft="440.5,299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39,49"
+              Start="0,0"
+              End="39,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
+                  <mssgle:LineSegment
+                    End="35,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35,24.5"
+                    Point2="39,24.5"
+                    Point3="39,28.5" />
+                  <mssgle:LineSegment
+                    End="39,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL_DIM_DATE.Paths[Derived Column Output]"
+          TopLeft="458,215">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-17.5,42"
+              Start="0,0"
+              End="-17.5,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="-4,21" />
+                  <mssgle:LineSegment
+                    End="-13.5,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-13.5,21"
+                    Point2="-17.5,21"
+                    Point3="-17.5,25" />
+                  <mssgle:LineSegment
+                    End="-17.5,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL_DIM_DATE\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
