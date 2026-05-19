@@ -1,0 +1,283 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f497566b-4fd2-4b97-a149-c9dfc7c518e2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Crime Type</ID>
+  <Name>Dim Crime Type</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1144" scrolltop="-4366" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5345" y="11880" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCrimeType" left="-192" top="-26" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3016" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCrimeType" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1144</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4366</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-192</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-26</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="14" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="143">
+            <Shape Id="Crime Type Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Crime Type Key" />
+                <Attribute Id="IUCR" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description" />
+              </Attributes>
+              <Position x="203" y="20" />
+            </Shape>
+            <Shape Id="Primary Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Primary Type" />
+              </Attributes>
+              <Position x="387" y="20" />
+            </Shape>
+            <Shape Id="FBI Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="FBI Code" />
+              </Attributes>
+              <Position x="571" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2411ab47-8a60-420d-b833-79e3d761d745">
+    <DataSourceViewID>Chicago Crime DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="48783763-45ed-47bd-87ee-13770d46c302">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="33b94a73-91f7-48ad-ac98-8bb57a27dd0e">
+      <ID>Crime Type Key</ID>
+      <Name>Crime Type Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fde2421e-ecec-421d-a40b-eaeb3ef2d814">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe4c0ed6-732e-4ede-b2e6-3173dc046ff2">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>CrimeTypeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="89df2043-40e9-4e88-bfd5-20f49abbce82">
+          <AttributeID>IUCR</AttributeID>
+          <Name>IUCR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c783f89-5e21-47ba-b5c0-2400c24a9a51">
+          <AttributeID>Description</AttributeID>
+          <Name>Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ae2400db-fb34-451e-b0b2-9000b26eb663">
+      <ID>IUCR</ID>
+      <Name>IUCR</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5273a525-0615-4cf6-8c3a-53704b1783ab">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b8edb21-fb0d-42b4-8315-7074d7d9b6e4">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>IUCR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d7377bcb-8bc9-4cba-bdca-357f72e21c03">
+      <ID>Primary Type</ID>
+      <Name>Primary Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02b391a1-5a30-4a99-bb52-a9d1687483db">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92da7875-ccd9-4787-bde2-c84a5dfcc5d5">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>FBICode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="77e4a91c-f600-4d5c-b9d9-c8ebe01c27ed">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce169c18-be66-48f6-aeb2-14ee9818c5ef">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>PrimaryType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4af819a2-879b-4c71-a70b-aed0e1a4deec">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2f4bc598-ccfc-4050-8c58-58e0ab42e54b">
+          <TableID>dbo_DimCrimeType</TableID>
+          <ColumnID>PrimaryType</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="cf9884ec-9a20-43e8-8808-0c257b3949f3">
+          <AttributeID>FBI Code</AttributeID>
+          <Name>FBI Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5953cd56-e634-423f-873a-a68ea3b266bb">
+      <ID>Description</ID>
+      <Name>Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="abf35aed-c32c-49e8-9227-1c8ba85616b9">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a903d18-c5b3-43ee-8dec-bcbeef0506df">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>FBICode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="41e52205-08e2-47e0-a963-3494a774227f">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bac523a9-ff7e-4944-87ba-686b71457f24">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>PrimaryType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9b8bcb7a-044e-4469-a5af-c05611a9b4e4">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="401d0bfd-cc04-4e7d-a8b2-6388c5c0933a">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="89aca814-fd66-4b89-81c4-b6d1100c0bb5">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="66fe991f-791b-4bd1-8196-bb1d6993bae0">
+          <TableID>dbo_DimCrimeType</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2b94821f-6e12-46a5-b00e-7a80af5d8f88">
+          <AttributeID>Primary Type</AttributeID>
+          <Name>Primary Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="08f64bf4-d067-4285-b8e1-bc871f1fd939">
+      <ID>FBI Code</ID>
+      <Name>FBI Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aacf7cc1-ce4b-4c4f-8051-88d7b38a2747">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="483897b2-ee08-4c87-bb29-9914e5fe678e">
+            <TableID>dbo_DimCrimeType</TableID>
+            <ColumnID>FBICode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="236d1e78-3691-499f-98d6-59b622c6b307">
+      <ID>Hierarchy</ID>
+      <Name>Klasyfikacja</Name>
+      <Levels>
+        <Level dwd:design-time-name="80a430d1-74ed-4a6f-82b6-aec0c4c4c91f">
+          <ID>FBI Code</ID>
+          <Name>FBI Code</Name>
+          <SourceAttributeID>FBI Code</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="78306537-38da-40a8-81f7-4494111d2b17">
+          <ID>Primary Type</ID>
+          <Name>Primary Type</Name>
+          <SourceAttributeID>Primary Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d951c708-c242-4592-ac54-6c5cca9b7942">
+          <ID>Description</ID>
+          <Name>Description</Name>
+          <SourceAttributeID>Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.37131.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "CHICAGO_CRIME_OLAP", "CHICAGO_CRIME_OLAP\CHICAGO_CRIME_OLAP.dwproj", "{DE9E6CE7-AE67-401F-8B6B-EDD82EBB474D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE9E6CE7-AE67-401F-8B6B-EDD82EBB474D}.Development|Default.ActiveCfg = Development
+		{DE9E6CE7-AE67-401F-8B6B-EDD82EBB474D}.Development|Default.Build.0 = Development
+		{DE9E6CE7-AE67-401F-8B6B-EDD82EBB474D}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70182786-6F64-40F6-96E6-8DAE531074E8}
+	EndGlobalSection
+EndGlobal
