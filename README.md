@@ -187,10 +187,7 @@ Raporty łączą się z kostką OLAP przez **Live Connection do SSAS**.
 - Power BI Desktop
 
 ### Kroki
-1. Sklonuj repozytorium:
-   ```bash
-   git clone https://github.com/<user>/chicago-crime-wad.git
-   ```
+1. Sklonuj to repozytorium
 2. Odtwórz hurtownię z pliku `database/ChicagoCrime_DW.bak`
 3. Otwórz solucję `WAD_Projekt_<numer>.sln` w Visual Studio
 4. W projekcie SSIS — uruchom przepływy ETL (Package.dtsx)
