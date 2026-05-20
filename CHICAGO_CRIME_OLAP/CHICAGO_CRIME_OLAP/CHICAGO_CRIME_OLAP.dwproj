@@ -6,6 +6,18 @@
     <Name>CHICAGO_CRIME_OLAP.database</Name>
     <FullPath>CHICAGO_CRIME_OLAP.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Chicago crime OLAP.cube</Name>
+      <FullPath>Chicago crime OLAP.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Chicago crime OLAP.partitions</Name>
+          <FullPath>Chicago crime OLAP.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>Dim Crime Type.dim</Name>
@@ -23,6 +35,10 @@
       <Name>Dim Location Type.dim</Name>
       <FullPath>Dim Location Type.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Crime.dim</Name>
+      <FullPath>Fact Crime.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -36,6 +52,12 @@
       <FullPath>Chicago Crime DW.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>MiningStructureCrime.dmm</Name>
+      <FullPath>MiningStructureCrime.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
