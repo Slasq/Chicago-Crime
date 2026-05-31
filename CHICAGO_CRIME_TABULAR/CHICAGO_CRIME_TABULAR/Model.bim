@@ -1,0 +1,758 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "pl-PL",
+    "dataSources": [
+      {
+        "name": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW",
+        "connectionString": "Provider=SQLNCLI11;Data Source=DESKTOP-IFD8LT5\\WAD;Initial Catalog=ChicagoCrime_DW;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "student",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "clusters_prediction",
+        "columns": [
+          {
+            "name": "CrimeKey",
+            "dataType": "int64",
+            "sourceColumn": "CrimeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ClusterID",
+            "dataType": "string",
+            "sourceColumn": "ClusterID",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "ClusterProbability",
+            "dataType": "double",
+            "sourceColumn": "ClusterProbability",
+            "sourceProviderType": "Double"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "clusters_prediction",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[clusters_prediction].* FROM [dbo].[clusters_prediction] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[clusters_prediction].* FROM [dbo].[clusters_prediction] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "clusters_prediction"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dt_arrest_prediction",
+        "columns": [
+          {
+            "name": "CrimeKey",
+            "dataType": "int64",
+            "sourceColumn": "CrimeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ActualArrest",
+            "dataType": "int64",
+            "sourceColumn": "ActualArrest",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "PredictedArrest",
+            "dataType": "int64",
+            "sourceColumn": "PredictedArrest",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "PredictProbability",
+            "dataType": "double",
+            "sourceColumn": "PredictProbability",
+            "sourceProviderType": "Double"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dt_arrest_prediction",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[dt_arrest_prediction].* FROM [dbo].[dt_arrest_prediction] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[dt_arrest_prediction].* FROM [dbo].[dt_arrest_prediction] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dt_arrest_prediction"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "FactCrime",
+        "columns": [
+          {
+            "name": "CrimeKey",
+            "dataType": "int64",
+            "sourceColumn": "CrimeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CrimeTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "CrimeTypeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "LocationKey",
+            "dataType": "int64",
+            "sourceColumn": "LocationKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "LocationTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "LocationTypeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CrimeID",
+            "dataType": "int64",
+            "sourceColumn": "CrimeID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CaseNumber",
+            "dataType": "string",
+            "sourceColumn": "CaseNumber",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Arrest",
+            "dataType": "boolean",
+            "sourceColumn": "Arrest",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "Domestic",
+            "dataType": "boolean",
+            "sourceColumn": "Domestic",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "type": "calculated",
+            "name": "ArrestStatus",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "IF( FactCrime[Arrest] = TRUE(), \"Arrested\", \"Not Arrested\" )"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactCrime",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[FactCrime].* FROM [dbo].[FactCrime] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Crimes",
+            "expression": " COUNTROWS(FactCrime)"
+          },
+          {
+            "name": "Arrest Count",
+            "expression": " CALCULATE( COUNTROWS(FactCrime), FactCrime[Arrest] = TRUE() )"
+          },
+          {
+            "name": "Arrest Rate",
+            "expression": " DIVIDE( [Arrest Count], [Total Crimes] )"
+          },
+          {
+            "name": "Domestic Count",
+            "expression": " CALCULATE( COUNTROWS(FactCrime), FactCrime[Domestic] = TRUE() )"
+          },
+          {
+            "name": "Domestic Rate",
+            "expression": " DIVIDE( [Domestic Count], [Total Crimes] )"
+          },
+          {
+            "name": "Daily Crime Avg",
+            "expression": " DIVIDE( [Total Crimes], DISTINCTCOUNT(DimDate[FullDate]) )"
+          },
+          {
+            "name": "Distinct Days",
+            "expression": " DISTINCTCOUNT(DimDate[FullDate])"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[FactCrime].* FROM [dbo].[FactCrime] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "FactCrime"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "nb_arrest_prediction",
+        "columns": [
+          {
+            "name": "CrimeKey",
+            "dataType": "int64",
+            "sourceColumn": "CrimeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ActualArrest",
+            "dataType": "int64",
+            "sourceColumn": "ActualArrest",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "PredictedArrest",
+            "dataType": "int64",
+            "sourceColumn": "PredictedArrest",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "PredictProbability",
+            "dataType": "double",
+            "sourceColumn": "PredictProbability",
+            "sourceProviderType": "Double"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "nb_arrest_prediction",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[nb_arrest_prediction].* FROM [dbo].[nb_arrest_prediction] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[nb_arrest_prediction].* FROM [dbo].[nb_arrest_prediction] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "nb_arrest_prediction"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "nn_arrest_prediction",
+        "columns": [
+          {
+            "name": "CrimeKey",
+            "dataType": "int64",
+            "sourceColumn": "CrimeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ActualArrest",
+            "dataType": "int64",
+            "sourceColumn": "ActualArrest",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "PredictedArrest",
+            "dataType": "int64",
+            "sourceColumn": "PredictedArrest",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "PredictProbability",
+            "dataType": "double",
+            "sourceColumn": "PredictProbability",
+            "sourceProviderType": "Double"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "nn_arrest_prediction",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[nn_arrest_prediction].* FROM [dbo].[nn_arrest_prediction] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[nn_arrest_prediction].* FROM [dbo].[nn_arrest_prediction] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "nn_arrest_prediction"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "DimCrimeType",
+        "columns": [
+          {
+            "name": "CrimeTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "CrimeTypeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "IUCR",
+            "dataType": "string",
+            "sourceColumn": "IUCR",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "PrimaryType",
+            "dataType": "string",
+            "sourceColumn": "PrimaryType",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Description",
+            "dataType": "string",
+            "sourceColumn": "Description",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "FBICode",
+            "dataType": "string",
+            "sourceColumn": "FBICode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "type": "calculated",
+            "name": "CrimeCount",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "CALCULATE( COUNTROWS(FactCrime) )"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCrimeType",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimCrimeType].* FROM [dbo].[DimCrimeType] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimCrimeType].* FROM [dbo].[DimCrimeType] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimCrimeType"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "DimDate",
+        "columns": [
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "FullDate",
+            "dataType": "dateTime",
+            "sourceColumn": "FullDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Quarter",
+            "dataType": "int64",
+            "sourceColumn": "Quarter",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "QuarterName",
+            "dataType": "string",
+            "sourceColumn": "QuarterName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Month",
+            "dataType": "int64",
+            "sourceColumn": "Month",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "MonthName",
+            "dataType": "string",
+            "sourceColumn": "MonthName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Day",
+            "dataType": "int64",
+            "sourceColumn": "Day",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "DayOfWeek",
+            "dataType": "int64",
+            "sourceColumn": "DayOfWeek",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "DayName",
+            "dataType": "string",
+            "sourceColumn": "DayName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "IsWeekend",
+            "dataType": "boolean",
+            "sourceColumn": "IsWeekend",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "Hour",
+            "dataType": "int64",
+            "sourceColumn": "Hour",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDate",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimDate].* FROM [dbo].[DimDate] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimDate].* FROM [dbo].[DimDate] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimDate"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "DimLocation",
+        "columns": [
+          {
+            "name": "LocationKey",
+            "dataType": "int64",
+            "sourceColumn": "LocationKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Block",
+            "dataType": "string",
+            "sourceColumn": "Block",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Beat",
+            "dataType": "int64",
+            "sourceColumn": "Beat",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "District",
+            "dataType": "int64",
+            "sourceColumn": "District",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Ward",
+            "dataType": "int64",
+            "sourceColumn": "Ward",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CommunityArea",
+            "dataType": "int64",
+            "sourceColumn": "CommunityArea",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Latitude",
+            "dataType": "double",
+            "sourceColumn": "Latitude",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "Longitude",
+            "dataType": "double",
+            "sourceColumn": "Longitude",
+            "sourceProviderType": "Double"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimLocation",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimLocation].* FROM [dbo].[DimLocation] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimLocation].* FROM [dbo].[DimLocation] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimLocation"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "DimLocationType",
+        "columns": [
+          {
+            "name": "LocationTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "LocationTypeKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "LocationDescription",
+            "dataType": "string",
+            "sourceColumn": "LocationDescription",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimLocationType",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[DimLocationType].* FROM [dbo].[DimLocationType] ",
+              "dataSource": "SqlServer DESKTOP-IFD8LT5WAD ChicagoCrime_DW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DimLocationType].* FROM [dbo].[DimLocationType] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimLocationType"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "ClusterSummary",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "ClusterID",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "clusters_prediction[ClusterID]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Crimes",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Crimes]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "ArrestRate",
+            "dataType": "double",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[ArrestRate]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "SUMMARIZECOLUMNS(clusters_prediction[ClusterID], \"Crimes\", COUNTROWS(clusters_prediction), \"ArrestRate\", DIVIDE(CALCULATE(COUNTROWS(FactCrime), FactCrime[Arrest]=TRUE()), COUNTROWS(FactCrime)))"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "598fe716-a7f9-460d-9490-94c8b295893f",
+        "fromTable": "FactCrime",
+        "fromColumn": "DateKey",
+        "toTable": "DimDate",
+        "toColumn": "DateKey"
+      },
+      {
+        "name": "1c1aa58c-c6fe-4f31-a463-c23ac4276cd0",
+        "fromTable": "FactCrime",
+        "fromColumn": "CrimeTypeKey",
+        "toTable": "DimCrimeType",
+        "toColumn": "CrimeTypeKey"
+      },
+      {
+        "name": "b140d538-017f-490b-a183-64567db94210",
+        "fromTable": "FactCrime",
+        "fromColumn": "LocationKey",
+        "toTable": "DimLocation",
+        "toColumn": "LocationKey"
+      },
+      {
+        "name": "9e630764-99e6-4d6f-8d24-167e550d95a8",
+        "fromTable": "FactCrime",
+        "fromColumn": "LocationTypeKey",
+        "toTable": "DimLocationType",
+        "toColumn": "LocationTypeKey"
+      },
+      {
+        "name": "41bcc602-25df-4b5a-81e9-041f5563b42a",
+        "fromCardinality": "one",
+        "fromTable": "clusters_prediction",
+        "fromColumn": "CrimeKey",
+        "toTable": "FactCrime",
+        "toColumn": "CrimeKey",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "249f7b87-8aa5-4240-8406-d0b5d05f5c3c",
+        "fromCardinality": "one",
+        "fromTable": "dt_arrest_prediction",
+        "fromColumn": "CrimeKey",
+        "toTable": "FactCrime",
+        "toColumn": "CrimeKey",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "4705719e-ae8d-4823-9e1c-302f35e75292",
+        "fromCardinality": "one",
+        "fromTable": "nn_arrest_prediction",
+        "fromColumn": "CrimeKey",
+        "toTable": "FactCrime",
+        "toColumn": "CrimeKey",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "992405fe-5bcc-460c-aebe-89e19809cf86",
+        "fromCardinality": "one",
+        "fromTable": "nb_arrest_prediction",
+        "fromColumn": "CrimeKey",
+        "toTable": "FactCrime",
+        "toColumn": "CrimeKey",
+        "crossFilteringBehavior": "bothDirections"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}

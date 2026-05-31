@@ -1,4 +1,4 @@
-﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="daab3ba6-d5ba-4685-8114-d73289d216ac" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4acd364f-fb83-4009-9445-a83a9c1437fc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>MiningStructureCrime</ID>
   <Name>MiningStructureCrime</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-16061" scrolltop="-3665" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35163" y="12330" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-16061" scrolltop="-3665" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35163" y="14605" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -27,7 +27,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_MiningCases" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_MiningCases" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
             </control>
@@ -72,165 +72,165 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8db6b168-b735-4ec5-b651-e1fd0d5f48e3">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="26e5ddda-2e7f-4d80-9f49-0e63add45e67">
     <DataSourceViewID>Chicago Crime DW</DataSourceViewID>
   </Source>
   <Columns>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="11f24a05-fe39-4d42-bf3a-96f672881388">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bc818efd-305d-42d9-8303-18041089ff0f">
       <ID>Arrest Int</ID>
       <Name>Arrest Int</Name>
       <Type>Long</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="92084db6-a40b-4e8f-b4a7-a4f01b54a317">
+        <KeyColumn dwd:design-time-name="53717bda-5f9c-4cef-9ced-8e92ee41e7fd">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e54145c8-42c7-483e-962a-c7d3e2822101">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9815250e-e077-458b-ba80-98e4b1c76acc">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>ArrestInt</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4707f1ac-283f-47ca-b853-768de4972c76">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b9c9fedc-16a2-4ebb-834f-706b374c8756">
       <ID>Crime Key</ID>
       <Name>Crime Key</Name>
       <IsKey>true</IsKey>
       <Type>Long</Type>
       <Content>Key</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ba9789a5-99a9-4337-96b3-887460845241">
+        <KeyColumn dwd:design-time-name="1caddf46-5ad2-453d-9055-e98d497a07b7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1146396-3125-4984-b3ea-93fad1ad43df">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fad427a-089d-4278-8686-5effbc97b77f">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>CrimeKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d9414373-429c-40f1-a369-dac5af9c6e81">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="16ea6512-f221-4dfe-b708-e3494884e238">
       <ID>Day Name</ID>
       <Name>Day Name</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fe1550cd-672a-4629-92a8-14f2d50731f4">
+        <KeyColumn dwd:design-time-name="841168c5-6adb-4ed5-acb0-4c61858fba12">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b1226d7-c832-4bb0-84b1-ca5b058ef3dc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe2b0801-e452-43ec-b663-57d6da219e59">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>DayName</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0f082788-1f07-4f75-bfbb-63d0cc688061">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="59186225-e3f4-4185-8e77-3c0cc2fa6232">
       <ID>District</ID>
       <Name>District</Name>
       <Type>Long</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="af20bbb4-2c2c-4235-b810-bccececf1bd1">
+        <KeyColumn dwd:design-time-name="5a78c59b-0972-4aeb-837e-910284419e47">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="46c9376b-2eda-4426-ad0b-cd658e9cd9b6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a756ab1-c588-4e76-818f-4f96b4fabdd6">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>District</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="42361be3-de60-4e7f-aaaf-2dd6053ae377">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fb07b767-de6f-4de9-817d-c69b7d042187">
       <ID>Domestic Int</ID>
       <Name>Domestic Int</Name>
       <Type>Long</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c8202565-57f3-44a8-9360-d893be3b962e">
+        <KeyColumn dwd:design-time-name="e74efabd-469b-4afa-a45c-62d880e56df7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d41ad665-7650-4e0d-8546-6b903ca4b78c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f253d092-3de0-4b0d-bc71-4479bb77243e">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>DomesticInt</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1f6d6563-b057-4776-93ec-dfa5934526eb">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c676fc10-f4f6-462e-9b4a-8dbb4bf8e6fa">
       <ID>Hour</ID>
       <Name>Hour</Name>
       <Type>Long</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="058a4cb6-2a73-4834-a83b-7d4150a93c7e">
+        <KeyColumn dwd:design-time-name="3e6033d3-deaa-4c7b-b5dc-9ba1aaf4e793">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7792d62-c8e5-45fc-8496-6ebf7c7aee9e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a41f550-4fe3-4d6c-a5e6-5a9e4245100e">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>Hour</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="58e86919-7514-4191-b20d-4dd96a3709f7">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="07326ea6-9558-4db9-8bcd-b4a2e24ad5da">
       <ID>Is Weekend</ID>
       <Name>Is Weekend</Name>
       <Type>Boolean</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d79c340d-d14c-40d8-8f7a-e88156fd6197">
+        <KeyColumn dwd:design-time-name="f6d80e0f-4c6a-4792-83e3-fd44e73658b8">
           <DataType>Boolean</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="198ff779-437f-4be2-a3dd-c4032a37dc32">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32390f89-a839-4ea0-85e2-078534456d9e">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>IsWeekend</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="41bcd171-01b9-457d-b5f5-dd756a958bfd">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bada4377-cc33-4f97-970d-c9fa71ef8e59">
       <ID>Location Type</ID>
       <Name>Location Type</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b96026a8-909f-43e5-ab1a-c18b6cf54405">
+        <KeyColumn dwd:design-time-name="a1e7bb92-5f10-4288-9825-a31c874de440">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ca4bd15-67f7-43e7-871b-e6cfbdd878bd">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f007ee4e-838a-4615-a21b-bfd664a165fe">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>LocationType</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2decf027-5e4f-4fbe-a4fc-27b2a26ff3d4">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="868ac4da-5717-4cb1-aa02-904a19234640">
       <ID>Month Name</ID>
       <Name>Month Name</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b0f8ccb2-9eaa-465f-b51e-b25ae07b0856">
+        <KeyColumn dwd:design-time-name="b42dd185-7c4a-41bf-9d37-493a9f29636a">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a7aef02-187e-44ce-84e2-2239c822d9ea">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3fe01a0-4204-4712-99e1-a31cd894cf1c">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>MonthName</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9b764c2b-fced-449f-8e54-9b13148b36d1">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c80bf2e0-8bc8-4a56-abf1-8b952c2326a4">
       <ID>Primary Type</ID>
       <Name>Primary Type</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f49848f2-428c-4f35-b945-fe0b670214d1">
+        <KeyColumn dwd:design-time-name="05d19b7b-26c6-4bbc-a410-a3cf6aa69a02">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3d3e48d-f8a5-4180-9439-ed936ca2b57c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="148d68a2-6260-4c2b-9c5c-e345f71719f0">
             <TableID>vw_MiningCases</TableID>
             <ColumnID>PrimaryType</ColumnID>
           </Source>
@@ -239,7 +239,7 @@
     </Column>
   </Columns>
   <MiningModels>
-    <MiningModel dwd:design-time-name="bbc6c8b5-b95d-4f95-b321-0722d09541da">
+    <MiningModel dwd:design-time-name="1aa11652-ec59-47ba-8890-a31a9aaf8976">
       <ID>DT_Arrest</ID>
       <Name>DT_Arrest</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -248,54 +248,54 @@
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Decision_Trees</Algorithm>
       <Columns>
-        <Column dwd:design-time-name="3ad3ec70-8384-466f-b53c-0ed2f325e5e5">
+        <Column dwd:design-time-name="f503243b-aa96-4915-b734-52bb683eeff5">
           <ID>Arrest Int</ID>
           <Name>Arrest Int</Name>
           <SourceColumnID>Arrest Int</SourceColumnID>
           <Usage>PredictOnly</Usage>
         </Column>
-        <Column dwd:design-time-name="ccbfcb36-af7e-443e-b168-b344d9b0ba0e">
+        <Column dwd:design-time-name="52384ab2-c5ee-4055-a851-3b82c80cabc4">
           <ID>Crime Key</ID>
           <Name>Crime Key</Name>
           <SourceColumnID>Crime Key</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="707eb2dd-26ec-44c7-8402-43ccca778cb1">
+        <Column dwd:design-time-name="8e80a135-b5e5-41df-8eaa-d44c3318dd65">
           <ID>Day Name</ID>
           <Name>Day Name</Name>
           <SourceColumnID>Day Name</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="fb412137-a918-405d-8bff-aef8f71be2f2">
+        <Column dwd:design-time-name="d02797f7-b30c-477b-a720-0166dab6cf38">
           <ID>District</ID>
           <Name>District</Name>
           <SourceColumnID>District</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="1382e0c3-f37b-4922-b849-f65a382f5031">
+        <Column dwd:design-time-name="b8e1ccba-65d0-4a28-bcf8-32d79c2a1476">
           <ID>Domestic Int</ID>
           <Name>Domestic Int</Name>
           <SourceColumnID>Domestic Int</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="6171fca2-59cb-4487-af35-0642593c5247">
+        <Column dwd:design-time-name="6b5a7d71-ac4a-4cb1-93a8-b5ebed54cd52">
           <ID>Hour</ID>
           <Name>Hour</Name>
           <SourceColumnID>Hour</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="6039b0ce-f767-48ea-85e1-dc9b2f26c1c3">
+        <Column dwd:design-time-name="ee68972f-55f4-4348-abdb-4ecf7cbf0c86">
           <ID>Is Weekend</ID>
           <Name>Is Weekend</Name>
           <SourceColumnID>Is Weekend</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="2e3063ef-c7f1-451f-9bf9-06d65f52721c">
+        <Column dwd:design-time-name="c8038268-8e50-4b3a-9199-f82d3d70e5e1">
           <ID>Location Type</ID>
           <Name>Location Type</Name>
           <SourceColumnID>Location Type</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="8f260be9-7d8c-4761-a86b-42f9fe77a6d0">
+        <Column dwd:design-time-name="ea95d7f8-37ec-41d6-a326-c2eb73e0dec7">
           <ID>Month Name</ID>
           <Name>Month Name</Name>
           <SourceColumnID>Month Name</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="0f0d31ff-ca0e-4be7-b062-7a1f8a65a193">
+        <Column dwd:design-time-name="7acbf1ca-c7ad-48cb-915b-1f2ee990592b">
           <ID>Primary Type</ID>
           <Name>Primary Type</Name>
           <SourceColumnID>Primary Type</SourceColumnID>
@@ -303,7 +303,7 @@
       </Columns>
       <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
-    <MiningModel dwd:design-time-name="5696a7fc-6acf-4c79-a572-657a7ab2ba70">
+    <MiningModel dwd:design-time-name="949f4f37-2f67-4a7e-b74b-732ebb3b5805">
       <ID>NN_Arrest</ID>
       <Name>NN_Arrest</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -312,61 +312,61 @@
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Neural_Network</Algorithm>
       <Columns>
-        <Column dwd:design-time-name="f7657dcc-cd09-426e-909b-4d8d3c10eb74">
+        <Column dwd:design-time-name="c633947a-3599-43db-b87a-a6769e43a2b0">
           <ID>Arrest Int</ID>
           <Name>Arrest Int</Name>
           <SourceColumnID>Arrest Int</SourceColumnID>
           <Usage>PredictOnly</Usage>
         </Column>
-        <Column dwd:design-time-name="04743b4a-67bb-4005-a832-a53f5421f339">
+        <Column dwd:design-time-name="bc0a0f6f-4b30-4813-a135-840cae083467">
           <ID>Crime Key</ID>
           <Name>Crime Key</Name>
           <SourceColumnID>Crime Key</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="086dd0a3-69de-4e2b-a8bc-705d617379c9">
+        <Column dwd:design-time-name="af52cf08-239a-4e9e-9200-e6a85d8737fa">
           <ID>Day Name</ID>
           <Name>Day Name</Name>
           <SourceColumnID>Day Name</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="5ffea1f0-ebfb-483d-8710-a2276c08e309">
+        <Column dwd:design-time-name="6611e8be-a0aa-48d4-acc9-3c58fa591693">
           <ID>District</ID>
           <Name>District</Name>
           <SourceColumnID>District</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="99184c34-c68b-43ab-82b5-d412d7fca24d">
+        <Column dwd:design-time-name="4ce16600-84fa-4928-b8a9-f7a22bd003e3">
           <ID>Domestic Int</ID>
           <Name>Domestic Int</Name>
           <SourceColumnID>Domestic Int</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="b342d75b-8c7c-4eb2-9e22-01cbcce3f0a3">
+        <Column dwd:design-time-name="57ee60c8-e050-48b9-a384-5ce7fc1aa0aa">
           <ID>Hour</ID>
           <Name>Hour</Name>
           <SourceColumnID>Hour</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="6ffe6cd8-339e-4138-acac-dc51165c477f">
+        <Column dwd:design-time-name="6a96a00f-7e67-4f40-a2ab-fbcb18f62fbb">
           <ID>Is Weekend</ID>
           <Name>Is Weekend</Name>
           <SourceColumnID>Is Weekend</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="cc129411-e9f6-43b8-a533-2ea06d41eae1">
+        <Column dwd:design-time-name="8085194f-f362-441f-a9dc-390c43f12b97">
           <ID>Location Type</ID>
           <Name>Location Type</Name>
           <SourceColumnID>Location Type</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="85692add-475e-4d8b-bd2e-f412dec457ee">
+        <Column dwd:design-time-name="cab8c349-e626-46e5-b9ee-32717d7811ee">
           <ID>Month Name</ID>
           <Name>Month Name</Name>
           <SourceColumnID>Month Name</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="787b1b28-1569-4a3f-876f-d8ada28f8eae">
+        <Column dwd:design-time-name="5e35da68-d61c-4e97-bcf9-bdf32862cabd">
           <ID>Primary Type</ID>
           <Name>Primary Type</Name>
           <SourceColumnID>Primary Type</SourceColumnID>
         </Column>
       </Columns>
     </MiningModel>
-    <MiningModel dwd:design-time-name="fc247837-c2c4-49a8-9a6b-4f3c1a88da78">
+    <MiningModel dwd:design-time-name="71c4e2fa-fb08-41ca-9547-9e9f0e360cc2">
       <ID>NB_Arrest</ID>
       <Name>NB_Arrest</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -375,54 +375,117 @@
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Naive_Bayes</Algorithm>
       <Columns>
-        <Column dwd:design-time-name="3444f34b-aa8d-4d15-8246-2be07091590a">
+        <Column dwd:design-time-name="bbd603e7-d752-4a6b-8611-ed832e012e0b">
           <ID>Arrest Int</ID>
           <Name>Arrest Int</Name>
           <SourceColumnID>Arrest Int</SourceColumnID>
           <Usage>PredictOnly</Usage>
         </Column>
-        <Column dwd:design-time-name="05048cbe-c5ca-46a7-8e4a-c71ae589f5e0">
+        <Column dwd:design-time-name="a85c455c-006f-4009-a8ca-edd0e41d40cb">
           <ID>Crime Key</ID>
           <Name>Crime Key</Name>
           <SourceColumnID>Crime Key</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="30b288a8-c59e-48cc-b9ad-c0bbe38ad4a5">
+        <Column dwd:design-time-name="3c875c65-b269-4da3-8365-ff9111334ef2">
           <ID>Day Name</ID>
           <Name>Day Name</Name>
           <SourceColumnID>Day Name</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="f6e8b990-63b1-4c9b-897a-f9cff9d8c598">
+        <Column dwd:design-time-name="0c79cc66-60f7-45a0-bc80-a016c1516790">
           <ID>District</ID>
           <Name>District</Name>
           <SourceColumnID>District</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="45201156-4085-4a47-8739-3a21419b0259">
+        <Column dwd:design-time-name="0da325c1-101c-4535-979c-e4315fe8d488">
           <ID>Domestic Int</ID>
           <Name>Domestic Int</Name>
           <SourceColumnID>Domestic Int</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="d376c1a7-b19f-43e6-b778-d1ad66150456">
+        <Column dwd:design-time-name="321613c8-4339-4cbf-a837-027920a28911">
           <ID>Hour</ID>
           <Name>Hour</Name>
           <SourceColumnID>Hour</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="cea2eb32-5814-4c2d-8c9e-f1eef45d7f5e">
+        <Column dwd:design-time-name="d7339a2c-4c4a-4d42-9b95-488e2f5896cc">
           <ID>Is Weekend</ID>
           <Name>Is Weekend</Name>
           <SourceColumnID>Is Weekend</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="adfa321f-82e0-4238-8c2d-2ed2aff7aeb3">
+        <Column dwd:design-time-name="c52e48c0-41e0-4ffd-a4c8-54f8bb1cfa7b">
           <ID>Location Type</ID>
           <Name>Location Type</Name>
           <SourceColumnID>Location Type</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="3919753e-0f39-4822-a14c-8a682297798c">
+        <Column dwd:design-time-name="e53cc0ac-23a5-4e6d-aceb-b061cec900ae">
           <ID>Month Name</ID>
           <Name>Month Name</Name>
           <SourceColumnID>Month Name</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="75c89fc8-dd26-465b-8a77-11ddeb19cee5">
+        <Column dwd:design-time-name="936f75bc-26ad-404d-a850-8018f74617da">
+          <ID>Primary Type</ID>
+          <Name>Primary Type</Name>
+          <SourceColumnID>Primary Type</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="8c8554d6-14eb-4af2-95c3-bf9842daaa0d">
+      <ID>Clustering_Crime</ID>
+      <Name>Clustering_Crime</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="a293df00-9981-4a9a-9979-905024eed964">
+          <ID>Arrest Int</ID>
+          <Name>Arrest Int</Name>
+          <SourceColumnID>Arrest Int</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="2ab20120-7783-494a-be3d-a4644e1d55d0">
+          <ID>Crime Key</ID>
+          <Name>Crime Key</Name>
+          <SourceColumnID>Crime Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="07552aa5-c56f-448b-95be-320ce0baab21">
+          <ID>Day Name</ID>
+          <Name>Day Name</Name>
+          <SourceColumnID>Day Name</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c6121ff2-66c4-4502-96bc-edf7ee072ac8">
+          <ID>District</ID>
+          <Name>District</Name>
+          <SourceColumnID>District</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="66adcbad-e7b5-4caa-a3ee-5b9cc274a6d8">
+          <ID>Domestic Int</ID>
+          <Name>Domestic Int</Name>
+          <SourceColumnID>Domestic Int</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5d50b3ba-3b2b-44d0-b21b-7f0408bfa23c">
+          <ID>Hour</ID>
+          <Name>Hour</Name>
+          <SourceColumnID>Hour</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9db2bdf4-1718-4114-a234-eaa79a46fd46">
+          <ID>Is Weekend</ID>
+          <Name>Is Weekend</Name>
+          <SourceColumnID>Is Weekend</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b79b8839-5053-42b0-9d18-4657c3d8602a">
+          <ID>Location Type</ID>
+          <Name>Location Type</Name>
+          <SourceColumnID>Location Type</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d4434f59-81ab-44de-beba-688fdce23a36">
+          <ID>Month Name</ID>
+          <Name>Month Name</Name>
+          <SourceColumnID>Month Name</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9285c1d3-466c-4657-bb68-908692b4523e">
           <ID>Primary Type</ID>
           <Name>Primary Type</Name>
           <SourceColumnID>Primary Type</SourceColumnID>

@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="888eae3c-d136-4be7-ae21-5518872ba98e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6b37916a-afef-4698-888f-2a03e2c8d7e9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Chicago Crime DW</ID>
   <Name>Chicago Crime DW</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -185,7 +185,7 @@
                   <shape groupshapeid="0" groupnode="0" />
                 </ddscontrol>
               </dds>
-</DiagramLayout>
+            </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>-9524</DiagramViewPortLeft>
@@ -369,6 +369,45 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="IsWeekend" msprop:design-time-name="57de30e4-36f1-468d-97c3-5521062b97e6" msprop:DbColumnName="IsWeekend" msprop:FriendlyName="IsWeekend" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dt_arrest_prediction" msprop:design-time-name="6cef0a48-ae3d-4897-8422-8778de9bb98b" msprop:DbTableName="dt_arrest_prediction" msprop:TableType="Table" msprop:FriendlyName="dt_arrest_prediction">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CrimeKey" msprop:design-time-name="cd7066d2-348a-46f7-a158-e1f07da8b23c" type="xs:int" minOccurs="0" />
+                  <xs:element name="ActualArrest" msprop:design-time-name="acd339be-89bf-4f8b-abaa-9aec06a903f9" type="xs:int" minOccurs="0" />
+                  <xs:element name="PredictedArrest" msprop:design-time-name="895b1af0-61dc-4cad-9b3f-66ddd10a267d" type="xs:long" minOccurs="0" />
+                  <xs:element name="PredictProbability" msprop:design-time-name="1981a4fb-e260-4439-b4ce-ce9be1440567" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="nn_arrest_prediction" msprop:design-time-name="dafda1b9-85f3-44ea-99b5-a8e99e7ba8ad" msprop:DbTableName="nn_arrest_prediction" msprop:TableType="Table" msprop:FriendlyName="nn_arrest_prediction">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CrimeKey" msprop:design-time-name="74b8cc94-b799-4e4a-a47e-d7cc89aa3f9d" type="xs:int" minOccurs="0" />
+                  <xs:element name="ActualArrest" msprop:design-time-name="8b6ed88d-854c-4dc0-a792-28faf21b2b77" type="xs:int" minOccurs="0" />
+                  <xs:element name="PredictedArrest" msprop:design-time-name="d8fc4845-d675-4af0-a960-da07c1f91ad7" type="xs:long" minOccurs="0" />
+                  <xs:element name="PredictProbability" msprop:design-time-name="087ee5c7-0c43-4eae-849e-57b096cf066a" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="nb_arrest_prediction" msprop:design-time-name="cfbf68ab-6161-4bb6-ad13-2d5d50ad350a" msprop:DbTableName="nb_arrest_prediction" msprop:TableType="Table" msprop:FriendlyName="nb_arrest_prediction">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CrimeKey" msprop:design-time-name="69273207-255e-448b-a895-442159008d62" type="xs:int" minOccurs="0" />
+                  <xs:element name="ActualArrest" msprop:design-time-name="84526acd-f0d0-40de-88ee-57b777d3ce4b" type="xs:int" minOccurs="0" />
+                  <xs:element name="PredictedArrest" msprop:design-time-name="05d91f6c-4cc2-4efa-80de-0711b70055fa" type="xs:long" minOccurs="0" />
+                  <xs:element name="PredictProbability" msprop:design-time-name="3e350dd2-9dd7-480b-b133-ad919a6d049d" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="clusters_prediction" msprop:design-time-name="6af7fd44-0e0b-4820-afd9-ec33a426919f" msprop:DbTableName="clusters_prediction" msprop:FriendlyName="clusters_prediction" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CrimeKey" msprop:design-time-name="b14796c8-edf8-48e6-8df8-84621bbc35e1" type="xs:int" minOccurs="0" />
+                  <xs:element name="ClusterID" msprop:design-time-name="98199ec5-54ea-4017-9eb2-67487122d35c" type="xs:string" minOccurs="0" />
+                  <xs:element name="ClusterProbability" msprop:design-time-name="0d6cbfb3-fde4-4914-943d-9236baddb014" type="xs:double" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
