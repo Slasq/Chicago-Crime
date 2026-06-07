@@ -220,6 +220,8 @@ chicago-crime-wad/
 
 ## Autor
 
+Maciej Gilecki, Wioletta Grabias
+
 Projekt zrealizowany w ramach przedmiotu **Wielowymiarowa Analiza Danych**, Politechnika Rzeszowska, Wydział Matematyki i Fizyki Stosowanej.
 
 ## Licencja
